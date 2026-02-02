@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+.mtnbck2{
+    text-align: center;
+    z-index: -1;
+    position: fixed;
+    top: 0%;
+    left: -20%;
+}
+
+.wrapper {
+  margin-top: 10%;
+  margin-left: 40%;
+  margin-right: 5%;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns:1fr auto 1fr;
+  grid-gap: 2%;
+  grid-auto-rows: minmax(fit-content, auto);
+}
+.one {
+  grid-column: 1 ;
+  grid-row: 1;
+  border: 2px solid rgb(233, 171, 88);
+  border-radius: 5px;
+}
+.two {
+  grid-column: 2;
+  grid-row: 1 / 7;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  z-index: 10;
+}
+.fbut{
+	border-radius: 50%;
+	background-color: rgb(3, 3, 2);
+	width: 10px;
+	height: 10px;
+}
+.fbut:hover{
+    background-color: blue;
+}
+.three {
+  grid-column: 3;
+  grid-row: 2 ;
+  border: 2px solid rgb(233, 171, 88);
+  border-radius: 5px;
+}
+.four{
+    grid-column: 1;
+    grid-row: 3 ;
+    border: 2px solid rgb(233, 171, 88);
+    border-radius: 5px;
+}
+.five{
+    grid-column: 3;
+    grid-row: 4 ;
+    border: 2px solid rgb(233, 171, 88);
+    border-radius: 5px;
+}
+.six{
+    grid-column: 1;
+    grid-row: 5 ;
+    border: 2px solid rgb(233, 171, 88);
+    border-radius: 5px;
+}
+.oneb {
+    grid-column: 2 ;
+    grid-row: 1;
+    margin-top: 150%;
+    z-index: 15;
+}
+.threeb {
+    grid-column: 2;
+    grid-row: 2 ;
+    margin-top: 150%;
+    z-index: 15;
+}
+.fourb{
+    grid-column: 2;
+    grid-row: 3 ;
+    margin-top: 150%;
+    z-index: 15;
+}
+.fiveb{
+    grid-column: 2;
+    grid-row: 4 ;
+    margin-top: 150%;
+    z-index: 15;
+}
+.sixb{
+    grid-column: 2;
+    grid-row: 5 ;
+    margin-top: 150%;
+    z-index: 15;
+}

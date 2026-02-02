@@ -5,7 +5,7 @@ body {
 	background: #00b4ff;
 	color: #333;
 	font: 100% Arial, Sans Serif;
-	height: 100vh;
+	height: 100%;
 	margin: 0;
 	padding: 0;
 	overflow-x: hidden;
@@ -29,10 +29,18 @@ body {
 	flex: 0 0 80%;
 	gap: 15px;
 	text-align: right;
+	z-index: 10;
 }
-.button{
+.b1{
 	height: 50px;
 	width: 200px;
+	z-index: 10;
+	background-image: url(/Images/cloud.png);
+	border: 0cap;
+	background-color: transparent;
+}
+.b1:hover{
+	background-image: url(/Images/cloud2.png);
 }
 
 .mtnbck{

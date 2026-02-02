@@ -1,0 +1,33 @@
+.mainfrize{
+	display: flex;
+	flex-direction: row;
+	gap:1%;
+	margin-top: 5%;
+	margin-left: 40%;
+	margin-right: 5%;
+	height: 1000px;
+}
+.cgauche{
+	flex:0 0 48%;
+	background-color: blueviolet;
+	display: flex;
+	flex-direction: column;
+}
+.cmilieu{
+	flex:0 0 2%;
+	background-color: rgb(245, 39, 39);
+	display: flex;
+	flex-direction: column;
+}
+.cdroite{
+	flex:0 0 48%;
+	background-color: chartreuse;
+	display: flex;
+	flex-direction: column;
+}
+.fbut{
+	border-radius: 50%;
+	background-color: rgb(3, 3, 2);
+	width: 10px;
+	height: 10px;
+}
