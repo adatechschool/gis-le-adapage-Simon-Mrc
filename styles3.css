@@ -5,3 +5,22 @@
     top: 0%;
     right: -20%;
 }
+* {
+  box-sizing: border-box;
+}
+.wrapper3 {
+  margin-top: 10%;
+  margin-left: 5%;
+  margin-right: 30%;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns:(40, 1fr);
+  grid-gap: 0px;
+  grid-auto-rows:auto;
+  font-family:Brush Script MT, Brush Script Std, cursive ;
+}
+.cita{
+  margin-top: 0px;
+  font-size: xx-large;
+
+}

@@ -1,18 +1,19 @@
 html {
   margin :0;
+  height: fit-content;
 }
 body {
 	background: #00b4ff;
 	color: #333;
-	font: 100% Arial, Sans Serif;
-	height: 100%;
+	font: 100% Comic Sans MS, Comic Sans, cursive;
+	height: fit-content;
 	margin: 0;
 	padding: 0;
 	overflow-x: hidden;
 }
 .headset{
 	position: absolute;
-	top: 0px;
+	top: 3%;
 	left: 0px;
 	height: 100px;
 	display: flex;
@@ -38,6 +39,8 @@ body {
 	background-image: url(/Images/cloud.png);
 	border: 0cap;
 	background-color: transparent;
+	font: 100% URW Chancery L, cursive, italic;
+	font-weight: 900;
 }
 .b1:hover{
 	background-image: url(/Images/cloud2.png);
@@ -50,10 +53,16 @@ body {
     top: 0%;
     left: 10%;
 }
+.thetitle{
+	font-family:Brush Script MT, Brush Script Std, cursive ;
+	font-size:xx-large;
+	text-align: center;
+	margin-top: 7%;
+}
 
 .mainall{
     position: relative;
-    top : 120px;
+    top : 7%;
     display:flex;
     flex-direction: column;
     gap: 20px;
@@ -137,15 +146,47 @@ body {
     border-radius: 50%;
 }
 footer{
-    display: flex;
-    width: 100%;
-    height: 200px;
-    background-color: rgb(78, 68, 181);
-    
+    background-color:transparent;
 }
-.footer:hover{
-	background-color: #333;
+.reseau{
+	display: inline-grid;
+    margin-left: 0%;
+	margin-bottom: -100px;
+    grid-template-columns:auto auto;
+    grid-gap: 0px;
+    grid-auto-rows: 30px;
+	background-color: aquamarine;
 }
+.gith{
+  grid-column: 1 ;
+  grid-row: 1;
+  border: 4px solid rgb(0, 0, 0);
+  background-color: rgb(105, 215, 165);
+  z-index: 30;
+}
+.fb{
+  grid-column: 2 ;
+  grid-row: 1;
+  border: 4px solid rgb(0, 0, 0);
+  background-color: rgb(115, 229, 178);
+  z-index: 30;
+}
+.insta{
+  grid-column: 1 ;
+  grid-row: 2;
+  border: 4px solid rgb(0, 0, 0);
+  background-color: rgb(95, 200, 150);
+  z-index: 30;
+}
+.discord{
+  grid-column: 2 ;
+  grid-row: 2;
+  border: 4px solid rgb(0, 0, 0);
+  background-color: rgb(85, 185, 135);
+  z-index: 30;
+}
+
+
 /* Subject to change *//* Subject to change */
 /* Subject to change *//* Subject to change */
 /* Subject to change *//* Subject to change */
@@ -220,7 +261,6 @@ footer{
 	-webkit-transform: scale(0.3);
 	-moz-transform: scale(0.3);
 	transform: scale(0.3);
-    z-index: -1;
 }
 
 .x3 {
@@ -231,7 +271,6 @@ footer{
 	-webkit-transform: scale(0.5);
 	-moz-transform: scale(0.5);
 	transform: scale(0.5);
-    z-index: 2;
 }
 
 .x4 {
