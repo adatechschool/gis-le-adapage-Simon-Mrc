@@ -1,6 +1,7 @@
 html {
   margin :0;
   height: fit-content;
+  overflow-x: scroll;
 }
 body {
 	background: #00b4ff;
@@ -9,7 +10,6 @@ body {
 	height: fit-content;
 	margin: 0;
 	padding: 0;
-	overflow-x: hidden;
 }
 .headset{
 	position: absolute;
@@ -18,7 +18,6 @@ body {
 	height: 100px;
 	display: flex;
 	width: 100%;
-
 }
 
 .logo{
@@ -114,24 +113,17 @@ body {
     flex-direction: row;
     height: 250px;
 }
-.parad{
+.parag, .parad{
     border: 10px;
     border-style: double;
     width: 100%;
     height: 150px;
     position: relative;
     top:50px;
-    text-align: right;
     background-color: #f0eaea;
 }
-.parag{
-    border: 10px;
-    border-style: double;
-    width: 100%;
-    height: 150px;
-    position: relative;
-    top:50px;
-    background-color: #f0eaea;
+.parad{
+	text-align: right;
 }
 .imaged{
     z-index: 1;
@@ -160,31 +152,24 @@ footer{
 .gith{
   grid-column: 1 ;
   grid-row: 1;
-  border: 4px solid rgb(0, 0, 0);
-  background-color: rgb(105, 215, 165);
-  z-index: 30;
 }
 .fb{
   grid-column: 2 ;
   grid-row: 1;
-  border: 4px solid rgb(0, 0, 0);
-  background-color: rgb(115, 229, 178);
-  z-index: 30;
 }
 .insta{
   grid-column: 1 ;
   grid-row: 2;
-  border: 4px solid rgb(0, 0, 0);
-  background-color: rgb(95, 200, 150);
-  z-index: 30;
 }
 .discord{
   grid-column: 2 ;
   grid-row: 2;
+}
+.insta, .discord, .fb, .gith{
   border: 4px solid rgb(0, 0, 0);
-  background-color: rgb(85, 185, 135);
   z-index: 30;
 }
+
 
 
 /* Subject to change *//* Subject to change */
@@ -197,7 +182,7 @@ footer{
 	position: fixed;
 	right: 0;
 	top: 0;
-    z-index: -1;
+    z-index: -2;
 }
 #background-wrap2 {
     bottom: 0;
@@ -213,24 +198,6 @@ footer{
 /* Subject to change */
 /* KEYFRAMES */
 
-@-webkit-keyframes animateCloud {
-    0% {
-        margin-left: -1000px;
-    }
-    100% {
-        margin-left: 100%;
-    }
-}
-
-@-moz-keyframes animateCloud {
-    0% {
-        margin-left: -1000px;
-    }
-    100% {
-        margin-left: 100%;
-    }
-}
-
 @keyframes animateCloud {
     0% {
         margin-left: -1000px;
@@ -243,106 +210,49 @@ footer{
 /* ANIMATIONS */
 
 .x1 {
-	-webkit-animation: animateCloud 35s linear infinite;
-	-moz-animation: animateCloud 35s linear infinite;
 	animation: animateCloud 35s linear infinite;
-	
-	-webkit-transform: scale(0.65);
-	-moz-transform: scale(0.65);
 	transform: scale(0.65);
     z-index: 1;
 }
 
 .x2 {
-	-webkit-animation: animateCloud 20s linear infinite;
-	-moz-animation: animateCloud 20s linear infinite;
 	animation: animateCloud 20s linear infinite;
-	
-	-webkit-transform: scale(0.3);
-	-moz-transform: scale(0.3);
 	transform: scale(0.3);
 }
 
 .x3 {
-	-webkit-animation: animateCloud 30s linear infinite;
-	-moz-animation: animateCloud 30s linear infinite;
 	animation: animateCloud 30s linear infinite;
-	
-	-webkit-transform: scale(0.5);
-	-moz-transform: scale(0.5);
 	transform: scale(0.5);
 }
 
 .x4 {
-	-webkit-animation: animateCloud 18s linear infinite;
-	-moz-animation: animateCloud 18s linear infinite;
 	animation: animateCloud 18s linear infinite;
-	
-	-webkit-transform: scale(0.4);
-	-moz-transform: scale(0.4);
 	transform: scale(0.4);
-    z-index: -3;
 }
 
 .x5 {
-	-webkit-animation: animateCloud 25s linear infinite;
-	-moz-animation: animateCloud 25s linear infinite;
 	animation: animateCloud 25s linear infinite;
-	
-	-webkit-transform: scale(0.55);
-	-moz-transform: scale(0.55);
 	transform: scale(0.55);
-    z-index: 4;
 }
 .x10 {
-	-webkit-animation: animateCloud 21s linear infinite;
-	-moz-animation: animateCloud 21s linear infinite;
 	animation: animateCloud 21s linear infinite;
-	
-	-webkit-transform: scale(0.25);
-	-moz-transform: scale(0.25);
 	transform: scale(0.25);
 }
 .x11 {
-	-webkit-animation: animateCloud 25s linear infinite;
-	-moz-animation: animateCloud 25s linear infinite;
 	animation: animateCloud 25s linear infinite;
-	
-	-webkit-transform: scale(0.15);
-	-moz-transform: scale(0.15);
 	transform: scale(0.15);
 }
 .x12 {
-	-webkit-animation: animateCloud 35s linear infinite;
-	-moz-animation: animateCloud 35s linear infinite;
 	animation: animateCloud 35s linear infinite;
-	
-	-webkit-transform: scale(0.35);
-	-moz-transform: scale(0.35);
 	transform: scale(0.35);
 }
 
 /* OBJECTS */
 
 .cloud {
-
 	background: #fff;
-	background: -moz-linear-gradient(top,  #fff 5%, #f1f1f1 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(5%,#fff), color-stop(100%,#f1f1f1));
-	background: -webkit-linear-gradient(top,  #fff 5%,#f1f1f1 100%);
-	background: -o-linear-gradient(top,  #fff 5%,#f1f1f1 100%);
-	background: -ms-linear-gradient(top,  #fff 5%,#f1f1f1 100%);
-	background: linear-gradient(top,  #fff 5%,#f1f1f1 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#f1f1f1',GradientType=0 );
-	
-	-webkit-border-radius: 100px;
-	-moz-border-radius: 100px;
 	border-radius: 100px;
-	
-	-webkit-box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
-	-moz-box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
 	box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
-
 	height: 120px;
 	position: relative;
 	width: 350px;
@@ -352,14 +262,10 @@ footer{
     background: #fff;
 	content: '';
 	position: absolute;
-	z-indeX: -2;
 }
 
 .cloud:after {
-	-webkit-border-radius: 100px;
-	-moz-border-radius: 100px;
 	border-radius: 100px;
-
 	height: 100px;
 	left: 50px;
 	top: -50px;
@@ -367,10 +273,7 @@ footer{
 }
 
 .cloud:before {
-	-webkit-border-radius: 200px;
-	-moz-border-radius: 200px;
 	border-radius: 200px;
-
 	width: 180px;
 	height: 180px;
 	right: 50px;
